@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BANKING SYSTEM</title>
+    
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    
+    <style>
+html{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Noto Serif', cursive;
+    
+}
+
+
+#loading{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #cfd7a3 url("https://media.giphy.com/media/xTk9ZvMnbIiIew7IpW/giphy.gif") no-repeat center center;
+    z-index: 99999;
+}
+
+.bg-light{
+    background-color: #f0b057!important;
+}
+
+.navbar-brand{
+    font-family: 'Cormorant SC', emoji;
+    font-size: 2rem;
+    color: #9d3c16!important;
+}
+
+.nav-link{
+    color: #9d3c16!important;
+    font-family: 'Taviraj', sans-serif;
+}
+
+.nav-link:hover{
+    background-color: #e4e9d6;
+}
+
+.asd-content{
+    
+    height: 100vh;
+    background-color: rgb(240, 111, 20);
+    color: #0a0908;
+    padding: 3rem;
+    
+}
+
+.asd-img{
+    height: 70vh;
+    
+}
+
+@media only screen and (max-width: 766px) {
+    .asd-img {
+      display: none;
+    }
+}
+
+.get-started{
+    font-family: 'Noto Serif', cursive;
+    border-radius: 0.5rem;
+    padding: 1rem 2rem;
+    font-size: 162%;
+    background-color: #f0b057;
+    color: #9d3c16!important;
+    transition: 0.3s;
+}
+
+.get-started:hover{
+    text-decoration: none;
+    background-color: #e4e9d6;
+    
+}
+
+.get-started-content{
+    height: 60vh;
+    background-color: #e8f807;
+    border-top-left-radius: 42rem;
+    border-top-right-radius: 42rem;
+    border-bottom-right-radius: 42rem;
+    border-bottom-left-radius: 42rem;
+}
+
+.get-started-content .row{
+    padding: 25vh 0;
+}
+
+.get-started-content a{
+    border-radius: 0.5rem;
+    padding: 1rem 2rem;
+    font-size: 162%;
+    background-color: #b6f115;
+    color: rgb(213, 189, 65)!important;
+    transition: 0.3s;
+}
+
+.get-started-content a:hover{
+    background-color: #bbed31;
+    text-decoration: none;
+}
+
+footer{
+    font-family: 'Noto Serif', cursive;
+    background-color:  #f0b057;
+    color: #9d3c16!important;
+}
+
+
+    </style>
+
+</head>
+<body onload="loader()">
+  
+  
+  <div id="loading"></div>
+
+   
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="./index.html"><b>Banking system</b></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./transactionhistory.php">Transaction History</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+    
+
+    
+    <div class="container-fluid asd-content">
+      <div class="row align-items-center">
+        <div class="col-md-6 col-sm-12 text-center" data-aos="fade-up">
+          <h1>Transfer Money at a go</h1>
+          <p class="lead muted">Introducing an easy and efficient way of money transfer for people across the globe!!</p>
+          <p><b>AND IT IS JUST A CLICK AWAY!!</b></p>
+          <br>
+          <br>
+          <a class="get-started" href="./customers.php">Get Started</a>
+        </div>
+        <div class="col-md-6 col-sm-12 text-center" data-aos="fade-left">
+          <div class="asd-img-div">
+            <img class="asd-img" src="asd.jpg" alt="img-showing-money-transfer">
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+
+
+
+    
+    <footer>
+      <hr>
+      <div class="row text-center">
+        <div class="col-md-6">
+          <p><b>Project done by S.Ananya Surabhi #June2022, GRIP</b></p>
+          
+        </div>
+        
+      </div>
+    </footer>
+    
+    <script>
+      var preloader = document.getElementById("loading");
+      function loader(){
+        preloader.style.display = 'none';
+      }
+    </script>
+
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js"></script>
+    <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js"></script>
+
+   
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 700,
+      });
+    </script>
+    
+</body>
+</html>
